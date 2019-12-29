@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".setActivity">
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="新的习惯"
+        android:textSize="30dp"/>
+
+    <android.widget.ScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:gravity="center"
+            android:background="@drawable/inserts"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/tColor"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/shape"
+                />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/habitText"
+                android:background="@drawable/msgs"
+                android:textSize="12dp"
+                android:hint="自己定义一个习惯"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="挑选颜色"
+            android:textSize="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bgray"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/shape"/>
+            <Button
+                android:id="@+id/bblue"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/shape"/>
+            <Button
+                android:id="@+id/bred"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/shape"/>
+            <Button
+                android:id="@+id/byellow"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/shape"/>
+            <Button
+                android:id="@+id/bgreen"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/shape"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bblack"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/shape"/>
+            <Button
+                android:id="@+id/bseablue"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/shape"/>
+            <Button
+                android:id="@+id/bpink"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/shape"/>
+            <Button
+                android:id="@+id/borange"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/shape"/>
+            <Button
+                android:id="@+id/bdefault"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/shape"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="在一天什么时候"
+            android:textSize="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bzao"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="上午"
+                android:textSize="18dp"
+                android:background="@drawable/inserts"/>
+
+            <Button
+                android:id="@+id/bzhong"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="下午"
+                android:textSize="18dp"
+                android:background="@drawable/inserts"/>
+
+            <Button
+                android:id="@+id/bwan"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="晚上"
+                android:textSize="18dp"
+                android:background="@drawable/inserts"/>
+
+            <Button
+                android:id="@+id/bshui"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="傍晚"
+                android:textSize="18dp"
+                android:background="@drawable/inserts"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="激励自己的话"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inserts"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:hint="写一句激励自己的话吧！"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/editView"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <Button
+                android:id="@+id/bsubmit"
+                android:background="@drawable/submits"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:text="确 定"
+                android:textSize="17dp"/>
+        </LinearLayout>
+        </LinearLayout>
+    </android.widget.ScrollView>
+
+
+</LinearLayout>

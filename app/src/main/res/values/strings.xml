@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Habit</string>
+    <string name="defaultText">+</string>
+    <string name="habitText">+ 添加习惯</string>
+    <string name="TextOne">项目</string>
+    <string name="TextTwo">时间</string>
+    <string name="strInputSql">请输入SQL语句</string>
+    <string name="strErrorSql">执行出错，请检查SQL语句</string>
+    <string name="strSuccessSql">执行SQL语句成功</string>
+    <string name="strUnableSql">Sorry，还没处理select语句</string>
+</resources>
